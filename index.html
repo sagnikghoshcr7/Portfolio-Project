@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +11,36 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-
-  <!------------------------ Home Section ------------------------>
-  <section>
-    
-  </section>
-
-  <!------------------------ About Section ------------------------>
-  <section>
-    <div class="text-box">
-      <div class="heading">To infinity and Beyond</div>
-      <div class="button-wrapper">
-          <div class="button">Learn More</div>
-          <div class="button">Contact Us</div>
+  <div class="main">
+    <!------------------------ Home Section ------------------------>
+    <section>
+      <div class="home">
+        <img src="./assets/home/bg.jpg" id="bg">
+        <img src="./assets/home/moon.png" id="moon">
+        <img src="./assets/home/cloud.png" id="cloud">
+        <img src="./assets/home/mountain.png" id="mountain">
+        <img src="./assets/home/person.png" id="road">
+        <h2 id="text">Hi, I am</h2>
       </div>
-    </div>
+    </section>
+    <script src="./js/home/home.js"></script>
 
-    <script src="./js/about/three.min.js"></script>
-    <script src="./js/about/about.js"></script>
-  </section>
+    <!------------------------ About Section ------------------------>
+    <section class="about">
+      <div class="text-box">
+        <div class="button-wrapper">
+            <div class="button">Learn More</div>
+            <div class="button">Contact Us</div>
+        </div>
+      </div>
+  
+      <script src="./js/about/three.min.js"></script>
+      <script src="./js/about/about.js"></script>
+    </section>
 
+  </div>
 </body>
+
 </html>
