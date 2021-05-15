@@ -48,7 +48,7 @@ body{
   bottom: 0;
   width: 100%;
   height: 100px;
-  background:linear-gradient(to top, #0a2a43,transparent);
+  background:linear-gradient(to top, #000000,transparent);
   z-index: 10000;
 }
 .home::after{
@@ -57,7 +57,7 @@ body{
   bottom: 0;
   width: 100%;
   height: 100%;
-  background:#0a2a43;
+  /* background:linear-gradient(to top, #000000,transparent); */
   z-index: 100;
   mix-blend-mode: color;
 }
