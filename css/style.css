@@ -1,9 +1,10 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
   font-family: 'Dosis', sans-serif;
 }
+
 /* ::-webkit-scrollbar{
   width:10px;
 }
@@ -14,17 +15,17 @@
 ::-webkit-scrollbar-thumb{
   background:rgb(0, 43, 92);
 } */
-body{
-  background:#0a2a43;
+body {
+  background: #0a2a43;
   min-height: 100%;
-   
+
 }
 
 /* -------------------------------------------------------
                    Home Section
 -------------------------------------------------------- */
 
-.home{
+.home {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -34,26 +35,29 @@ body{
   align-items: center;
 
 }
-.home img{
+
+.home img {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
 }
-.home::before{
-  content:' ';
+
+.home::before {
+  content: ' ';
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
-  background:linear-gradient(to top, #000000,transparent);
+  background: linear-gradient(to top, #000000, transparent);
   z-index: 10000;
 }
-.home::after{
-  content:' ';
+
+.home::after {
+  content: ' ';
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -62,19 +66,21 @@ body{
   z-index: 100;
   mix-blend-mode: color;
 }
-#text{
+
+#text {
   position: absolute;
-  top:40px;
-  left:40px;
-  color:#fff;
+  top: 40px;
+  left: 40px;
+  color: #fff;
   font-family: Raleway;
   font-size: 11vw;
   z-index: 1;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow: -30px 30px 50px black;
 }
-#road{
-  z-index:2;
+
+#road {
+  z-index: 2;
 }
 
 /* -------------------------------------------------------
@@ -91,119 +97,139 @@ body{
 
 canvas {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
+
 .text-box {
   font-size: 60px;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 7px;
   word-spacing: 12px;
   text-transform: uppercase;
-  color:rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
 }
+
 .button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
+
 .button {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
   padding: 15px;
-  margin-left:20px;
-  margin-right:20px;
+  margin-left: 20px;
+  margin-right: 20px;
   word-spacing: normal;
   letter-spacing: 5px;
   border: 1px solid white;
   background: black;
   cursor: pointer;
-} 
+}
+
+/* -------------------------------------------------------
+                   Skills Section
+-------------------------------------------------------- */
+
 .skills {
-  background-color: #000000;
-  /* width: 100vw - 10px ;  */
+  position: absolute;
+  display: grid;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  ;
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-.sets{
+
+.sets {
   height: 100vh;
   overflow: hidden;
   background: #000;
 }
-.sets span{
+
+.sets span {
   position: absolute;
   background: transparent;
   pointer-events: none;
   background-size: cover;
   animation: animates 6s linear forwards;
 }
-@keyframes animates
-{
 
-  0%
-  {
+.skillsdiv {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+
+@keyframes animates {
+  0% {
     transform: perspective(500px) rotateY(0deg) translateX(-250px);
   }
-  50%
-  {
+
+  50% {
     opacity: 1;
   }
-  100%
-  {
+
+  100% {
     transform: perspective(500px) rotateY(50deg) translateX(1000%);
     opacity: 0;
   }
-
-
-
 }
-td{
+
+td {
   padding: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  
-  font-family: 'Poppins', sans-serif;
-}
- 
-::selection{
+
+::selection {
   color: #fff;
   background: #6665ee;
 }
-.skill-bars{
+
+.skill-bars {
   padding: 25px 30px;
   width: 600px;
   background: #fff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.skill-bars .bar{
+
+.skill-bars .bar {
   margin: 20px 0;
 }
-.skill-bars .bar:first-child{
+
+.skill-bars .bar:first-child {
   margin-top: 0px;
 }
-.skill-bars .bar .info{
+
+.skill-bars .bar .info {
   margin-bottom: 5px;
 }
-.skill-bars .bar .info span{
+
+.skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
+
 @keyframes showText {
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.skill-bars .bar .progress-line{
+
+.skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
   background: #f0f0f0;
@@ -211,40 +237,48 @@ td{
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 10px;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-              0 1px rgba(255,255,255,0.8);
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 @keyframes animate {
-  100%{
+  100% {
     transform: scaleX(1);
   }
 }
-.bar .progress-line span{
+
+.bar .progress-line span {
   height: 100%;
   position: absolute;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
   background: #6665ee;
-  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-.bar .progress-line.html span{
+
+.bar .progress-line.html span {
   width: 90%;
 }
-.bar .progress-line.css span{
+
+.bar .progress-line.css span {
   width: 60%;
 }
-.bar .progress-line.jquery span{
+
+.bar .progress-line.jquery span {
   width: 85%;
 }
-.bar .progress-line.python span{
+
+.bar .progress-line.python span {
   width: 50%;
 }
-.bar .progress-line.mysql span{
+
+.bar .progress-line.mysql span {
   width: 75%;
 }
-.progress-line span::before{
+
+.progress-line span::before {
   position: absolute;
   content: "";
   top: -10px;
@@ -258,7 +292,8 @@ td{
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
-.progress-line span::after{
+
+.progress-line span::after {
   position: absolute;
   top: -28px;
   right: 0;
@@ -271,23 +306,29 @@ td{
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.progress-line.html span::after{
+
+.progress-line.html span::after {
   content: "90%";
 }
-.progress-line.css span::after{
+
+.progress-line.css span::after {
   content: "60%";
 }
-.progress-line.jquery span::after{
+
+.progress-line.jquery span::after {
   content: "85%";
 }
-.progress-line.python span::after{
+
+.progress-line.python span::after {
   content: "50%";
 }
-.progress-line.mysql span::after{
+
+.progress-line.mysql span::after {
   content: "75%";
 }
