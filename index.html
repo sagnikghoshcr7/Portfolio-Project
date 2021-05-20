@@ -2,45 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/about/typed.js"></script>
 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-  <div class="main">
-    <!------------------------ Home Section ------------------------>
-    <section>
-      <div class="home">
-        <img src="./assets/home/bg.jpg" id="bg">
-        <img src="./assets/home/moon.png" id="moon">
-        <img src="./assets/home/cloud.png" id="cloud">
-        <img src="./assets/home/mountain.png" id="mountain">
-        <img src="./assets/home/person.png" id="road">
-        <h2 id="text">Hi, I am</h2>
-      </div>
-    </section>
-    <script src="./js/home/home.js"></script>
+    <div class="main">
+        <!------------------------ Navbar Section ------------------------>
 
-    <!------------------------ About Section ------------------------>
-    <section class="about">
-      <div class="text-box">
-        <div class="button-wrapper">
-            <div class="button">Learn More</div>
-            <div class="button">Contact Us</div>
-        </div>
-      </div>
-  
-      <script src="./js/about/three.min.js"></script>
-      <script src="./js/about/about.js"></script>
-    </section>
+        <!-- <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+            <label class="logo">DesignX</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav> -->
 
-  </div>
+        <header>
+            <a href="#" class="logo">BigDaddy</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+
+        <!------------------------ Home Section ------------------------>
+        <section>
+            <div class="home">
+                <img src="./assets/home/bg.jpg" id="bg">
+                <img src="./assets/home/moon.png" id="moon">
+                <img src="./assets/home/cloud.png" id="cloud">
+                <img src="./assets/home/mountain.png" id="mountain">
+                <img src="./assets/home/person.png" id="road">
+                <h2 id="text">Hi, I am Amazing!!</h2>
+            </div>
+        </section>
+        <script src="./js/home/home.js"></script>
+
+        <!------------------------ About Section ------------------------>
+        <section class="about">
+            <!--
+                <div class="text-box">
+                <div class="button-wrapper">
+                    <div class="button">Learn More</div>
+                    <div class="button">Contact Us</div>
+                </div>
+            </div>
+            -->
+
+            <div class="about-section">
+                <div class="inner-container">
+
+                    <div id="typed-strings">
+                        <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+                        <p>It can type anything you want</p>
+                    </div>
+                    <span id="typed"></span>
+                    <script type="text/javascript">
+                        $('document').ready(function() {
+                            var typed = new Typed('#typed', {
+                                stringsElement: '#typed-strings',
+                            });
+                        })
+                    </script>
+                    <p class="text">I’m BigDaddy . . I am a Software developer, and I'm very passionate and dedicated to my work. With two year of experience as a Software developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+                    <div class="tech">
+                        <span>Age: 19</span>
+                        <span>Address: India</span>
+                        <span>Phone No.: +91 69696 96969</span>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./js/about/three.min.js"></script>
+            <script src="./js/about/about.js"></script>
+        </section>
+        <script src="./js/skills/skill.js"></script>
+
+
+
 </body>
 
 </html>
