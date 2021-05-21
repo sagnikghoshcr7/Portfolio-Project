@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
@@ -158,6 +158,84 @@
     width: 100%;
     height: 50vw;">
     </section>  {% endcomment %}
+
+    <!------------------------ TESTIMONIALS SECTION -------------------->
+      <section class="swiper-container">
+        <h1 class="title">TESTIMONIALS</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="t-box">
+                    <div class="t-image">
+                        <img src="assets/testimonials/1.jpeg" alt="Image">
+                    </div>
+                    <span class="name">John Smith</span>
+                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                    <div class="t-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="t-box">
+                    <div class="t-image">
+                        <img src="assets/testimonials/2.jpeg" alt="Image">
+                    </div>
+                    <span class="name">Amelia Black</span>
+                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                    <div class="t-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="t-box">
+                    <div class="t-image">
+                        <img src="assets/testimonials/3.jpeg" alt="Image">
+                    </div>
+                    <span class="name">Jason Magdalino</span>
+                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                    <div class="t-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="t-box">
+                    <div class="t-image">
+                        <img src="assets/testimonials/4.jpeg" alt="Image">
+                    </div>
+                    <span class="name">Samantha Jersey</span>
+                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                    <div class="t-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="t-box">
+                    <div class="t-image">
+                        <img src="assets/testimonials/5.jpeg" alt="Image">
+                    </div>
+                    <span class="name">Quinton Coldwalker</span>
+                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                    <div class="t-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-------------------------Contact Us Section---------------------->
     <section class = "contact">
       <div class="contact-container">
@@ -227,7 +305,28 @@
       </div>
     </section>
   </div>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          autoplay: 
+          {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          loop: true
+        });
+    </script>
 </body>
 
 </html>
