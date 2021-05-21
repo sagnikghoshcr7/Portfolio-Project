@@ -2,332 +2,343 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 </head>
 
 <body>
-  <div class="main">
-    <!------------------------ Home Section ------------------------>
-    <section>
-      <div class="home">
-        <img src="./assets/home/bg.jpg" id="bg">
-        <img src="./assets/home/moon.png" id="moon">
-        <img src="./assets/home/cloud.png" id="cloud">
-        <img src="./assets/home/mountain.png" id="mountain">
-        <img src="./assets/home/personMain.png" id="road1">
-        <img src="./assets/home/person.png" id="road2"></img>
-        <h2 id="text1">Hi, I am</h2>
-        <h2 id="text2">Hi, I am<br>SAGNIK</h2>
-      </div>
-    </section>
-    <script src="./js/home/home.js"></script>
+    <div class="main">
+        <!------------------------ Loader ------------------------>
+        <section>
+            <div class="loaderwrapper">
+                <div class="box" id="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <script src="./js/loader/loader.js"></script>
+        </section>
+        <!------------------------ Home Section ------------------------>
+        <section>
+            <div class="home">
+                <img src="./assets/home/bg.jpg" id="bg">
+                <img src="./assets/home/moon.png" id="moon">
+                <img src="./assets/home/cloud.png" id="cloud">
+                <img src="./assets/home/mountain.png" id="mountain">
+                <img src="./assets/home/personMain.png" id="road1">
+                <img src="./assets/home/person.png" id="road2"></img>
+                <h2 id="text1">Hi, I am</h2>
+                <h2 id="text2">Hi, I am<br>SAGNIK</h2>
+            </div>
+        </section>
+        <script src="./js/home/home.js"></script>
 
-    <!------------------------ About Section ------------------------>
-    <section class="about">
-      <div class="text-box">
-        <div class="button-wrapper">
-          <div class="button">Learn More</div>
-          <div class="button">Contact Us</div>
-        </div>
-      </div>
+        <!------------------------ About Section ------------------------>
+        <section class="about">
+            <div class="text-box">
+                <div class="button-wrapper">
+                    <div class="button">Learn More</div>
+                    <div class="button">Contact Us</div>
+                </div>
+            </div>
 
-      <script src="./js/about/three.min.js"></script>
-      <script src="./js/about/about.js"></script>
-    </section>
-    <script src="./js/skills/skill.js"></script>
+            <script src="./js/about/three.min.js"></script>
+            <script src="./js/about/about.js"></script>
+        </section>
+        <script src="./js/skills/skill.js"></script>
 
-    <!------------------------ Skills Section ------------------------>
-    <section class="skills">
+        <!------------------------ Skills Section ------------------------>
+        <section class="skills">
 
-      <div class="sets">
-        <script>
-          $(function () {
-            if ($('section').is('.sets')) {
-              setInterval(dropImage, 50);
-            }
-          });
-        </script>
-      </div>
+            <div class="sets">
+                <script>
+                    $(function() {
+                        if ($('section').is('.sets')) {
+                            setInterval(dropImage, 50);
+                        }
+                    });
+                </script>
+            </div>
 
-      <div class="skillsdiv">
-        <table>
-          <tr>
-            <td>
-              <div class="skill-bars">
-                <div class="bar">
-                  <div class="info">
-                    <span>HTML</span>
-                  </div>
-                  <div class="progress-line html">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line css">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>jQuery</span>
-                  </div>
-                  <div class="progress-line jquery">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>Python</span>
-                  </div>
-                  <div class="progress-line python">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>MySQL</span>
-                  </div>
-                  <div class="progress-line mysql">
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="skill-bars">
-                <div class="bar">
-                  <div class="info">
-                    <span>HTML</span>
-                  </div>
-                  <div class="progress-line html">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line css">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>jQuery</span>
-                  </div>
-                  <div class="progress-line jquery">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>Python</span>
-                  </div>
-                  <div class="progress-line python">
-                    <span></span>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="info">
-                    <span>MySQL</span>
-                  </div>
-                  <div class="progress-line mysql">
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
+            <div class="skillsdiv">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="skill-bars">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>jQuery</span>
+                                    </div>
+                                    <div class="progress-line jquery">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="progress-line python">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="progress-line mysql">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="skill-bars">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>jQuery</span>
+                                    </div>
+                                    <div class="progress-line jquery">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="progress-line python">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="progress-line mysql">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-    {% comment %} <section style="position: relative;
+        {% comment %}
+        <section style="position: relative;
     width: 100%;
     height: 50vw;">
-    </section>  {% endcomment %}
+        </section> {% endcomment %}
 
-    <!------------------------ TESTIMONIALS SECTION -------------------->
-      <section class="swiper-container">
-        <h1 class="title">TESTIMONIALS</h1>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/1.jpeg" alt="Image">
+        <!------------------------ TESTIMONIALS SECTION -------------------->
+        <section class="swiper-container">
+            <h1 class="title">TESTIMONIALS</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/1.jpeg" alt="Image">
+                        </div>
+                        <span class="name">John Smith</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
                     </div>
-                    <span class="name">John Smith</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/2.jpeg" alt="Image">
+                        </div>
+                        <span class="name">Amelia Black</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/3.jpeg" alt="Image">
+                        </div>
+                        <span class="name">Jason Magdalino</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/4.jpeg" alt="Image">
+                        </div>
+                        <span class="name">Samantha Jersey</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/5.jpeg" alt="Image">
+                        </div>
+                        <span class="name">Quinton Coldwalker</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/2.jpeg" alt="Image">
+        </section>
+
+        <!-------------------------Contact Us Section---------------------->
+        <section class="contact">
+            <div class="contact-container">
+                <form class="contact-form" action="/action_page.php">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <input id="contact-inp" class="firstname-inp" type="text" placeholder="Your First Name" required /></label>
+                    <input id="contact-inp" class="lastname-inp" type="text" placeholder="Your Last Name" required /></label>
+                    <input id="contact-inp" class="subject-inp" type="text" placeholder="Subject" /></label>
+                    <textarea id="contact-inp" class="msg-inp" name="" id="" cols="80" rows="5" placeholder="Your Message" required></textarea></label>
+                    <input class="contact-btn" type="submit" placeholder="Submit">
+                </form>
+                <div class="other-contact">
+                    <h1 class="OContact-title">Get in Touch!</h1>
+                    <div class="location-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="location-text">112 ABC, New Delhi India</span>
                     </div>
-                    <span class="name">Amelia Black</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
+                    <div class="email-box">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:satwiksanjay@gmail.com" class="email-text">saatwik@gmail.com</a>
+                    </div>
+                    <div class="phone-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:7044941540" class="phone-text">+91 7044941540</a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/3.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Jason Magdalino</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
+        </section>
+
+
+        <!------------------------ Footer Section ------------------------>
+
+        <section class="footer">
+            <div class="wrapper">
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Facebook</span></a>
+                    </a>
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Twitter</span></a>
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Instagram</span></a>
+
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Whatsapp</span></a>
+                </div>
+                <div class="iconbutton ">
+                    <a href="#" class="icon ">
+                        <i class="fab fa-linkedin "></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>LinkedIn</span></a>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/4.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Samantha Jersey</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/5.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Quinton Coldwalker</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-------------------------Contact Us Section---------------------->
-    <section class="contact">
-      <div class="contact-container">
-        <form class="contact-form" action="/action_page.php">
-          <h1 class="contact-title">Contact Me</h1>
-          <input id="contact-inp" class="firstname-inp" type="text" placeholder="Your First Name" required /></label>
-          <input id="contact-inp" class="lastname-inp" type="text" placeholder="Your Last Name" required /></label>
-          <input id="contact-inp" class="subject-inp" type="text" placeholder="Subject" /></label>
-          <textarea id="contact-inp" class="msg-inp" name="" id="" cols="80" rows="5" placeholder="Your Message"
-            required></textarea></label>
-          <input class="contact-btn" type="submit" placeholder="Submit">
-        </form>
-        <div class="other-contact">
-          <h1 class="OContact-title">Get in Touch!</h1>
-          <div class="location-box">
-            <i class="fas fa-map-marker-alt"></i>
-            <span class="location-text">112 ABC, New Delhi India</span>
-          </div>
-          <div class="email-box">
-            <i class="far fa-envelope"></i>
-            <a href="mailto:satwiksanjay@gmail.com" class="email-text">saatwik@gmail.com</a>
-          </div>
-          <div class="phone-box">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:7044941540" class="phone-text">+91 7044941540</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!------------------------ Footer Section ------------------------>
-
-    <section class="footer">
-      <div class="wrapper">
-        <div class="iconbutton">
-          <a href="#" class="icon">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" style="text-decoration: none"><span>Facebook</span></a>
-          </a>
-        </div>
-        <div class="iconbutton">
-          <a href="#" class="icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" style="text-decoration: none"><span>Twitter</span></a>
-        </div>
-        <div class="iconbutton">
-          <a href="#" class="icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" style="text-decoration: none"><span>Instagram</span></a>
-
-        </div>
-        <div class="iconbutton">
-          <a href="#" class="icon">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="#" style="text-decoration: none"><span>Whatsapp</span></a>
-        </div>
-        <div class="iconbutton ">
-          <a href="#" class="icon ">
-            <i class="fab fa-linkedin "></i>
-          </a>
-          <a href="#" style="text-decoration: none"><span>LinkedIn</span></a>
-        </div>
-      </div>
-    </section>
-  </div>
+        </section>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
-          autoplay: 
-          {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          loop: true
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true
         });
     </script>
 </body>
