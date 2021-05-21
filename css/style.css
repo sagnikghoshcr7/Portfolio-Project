@@ -65,7 +65,7 @@ body {
   mix-blend-mode: color;
 }
 
-#text {
+#text1 {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -77,8 +77,52 @@ body {
   text-shadow: -30px 30px 50px black;
 }
 
-#road {
+#text2 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 11vw;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: -30px 30px 50px black;
+}
+
+#road1 {
   z-index: 2;
+}
+
+#road2 {
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1130px) {
+  #road1 {
+    display: block !important;
+  }
+
+  #road2 {
+    display: none !important;
+  }
+
+  #text2 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  #road1 {
+    display: none !important;
+  }
+
+  #road2 {
+    display: block !important;
+  }
+
+  #text1 {
+    display: none !important;
+  }
 }
 
 /* -------------------------------------------------------
