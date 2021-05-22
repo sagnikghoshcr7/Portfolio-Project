@@ -21,6 +21,79 @@ body {
 }
 
 /* -------------------------------------------------------
+                   Navbar Section
+-------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 10000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  background-color: white;
+  border-radius: 5px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000;
+  background-size: cover;
+  opacity: 70%;
+}
+
+header .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+/* -------------------------------------------------------
                    Home Section
 -------------------------------------------------------- */
 
@@ -144,34 +217,70 @@ canvas {
   z-index: -1;
 }
 
-.text-box {
-  font-size: 60px;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 7px;
-  word-spacing: 12px;
-  text-transform: uppercase;
-  color: rgb(238, 238, 238);
+.about-section {
+  height: 60%;
+  width: 60%;
+  background: url(/assets/about/pic.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  padding: 100px 0;
+  opacity: 90%;
 }
 
-.button-wrapper {
+.inner-container {
+  width: 60%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 50px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.tech {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
 }
 
-.button {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  word-spacing: normal;
-  letter-spacing: 5px;
-  border: 1px solid white;
-  background: black;
-  cursor: pointer;
+@media screen and (max-width:1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .about-section {
+    padding: 0;
+  }
+
+  .inner-container {
+    padding: 60px;
+  }
 }
 
 /* -------------------------------------------------------
@@ -380,7 +489,7 @@ td {
 .footer {
   position: absolute;
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 0 !important;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -390,6 +499,11 @@ td {
       rgba(2, 0, 36, 0.5) 0%,
       rgba(255, 255, 255, 0.2) 50%,
       rgba(0, 0, 0, 0.5) 100%);
+}
+
+.wrapper {
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .wrapper .iconbutton {
@@ -677,7 +791,6 @@ td {
   text-decoration: none;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
   .column,
@@ -687,98 +800,436 @@ td {
   }
 }
 
-/* Testimonials */
-
-.title
-{
-    color: #fff;
-    font-size: 40px;
-    margin-top: 5%;
-    text-align: center;
-}
-.swiper-container
-{
-    width: 100%;
-    height: 90.3vh;
-    margin-bottom: 5%;
+/* -------------------------------------------------------
+                   Projects Section                      
+-------------------------------------------------------- */
+a {
+  color: #777;
+  text-decoration: none;
 }
 
-.swiper-slide
-{
-    background-position: center;
-    background-size: cover;
-    width: 25% !important;
-    height: 40vh;
-    filter: blur(4px);
-}
-.swiper-slide-active
-{
-    filter: blur(0px);
+a:hover {
+  color: #000;
 }
 
-.t-box
-{
-    position: relative;
-    margin: 20px;
-    top: 10%;
-    left: 1%;
-    padding: 40px;
-    height: 60vh;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    display: inline-flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    cursor: pointer;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: "Raleway", sans-serif;
 }
 
-.t-image img
-{
-    position: absolute;
-    background: rgba(0,0,0,1);
-    border-radius: 50%;
-    width: 150px;
-    height: 130px;
-    top: 0;
-    margin-top: 3%;
-    bottom: 0;
-    left: 30%;
+.section {
+  padding: 7rem 0;
 }
 
-.t-text p 
-{
-    color: #fff;
-    text-align: justify;
-    font-size: 22px;
-    margin-top: 80%;
+.filters a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
 }
 
-.swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top
-{
-   background-image: none !important; 
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+  text-decoration: none;
 }
 
-.quotes
-{
-    position: absolute;
-    margin-top: 40%;
-    margin-left: 34%;
+.filters a:hover:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background-color: #000;
 }
 
-.quotes .fa-quote-right
-{
+.filters a.active {
+  color: #000;
+}
+
+.filters a.active:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.item {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.item .item-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .item-wrap:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s all ease-in-out;
+}
+
+.item .item-wrap img {
+  transition: .3s transform ease;
+  transform: scale(1);
+}
+
+.item .item-wrap>.work-info {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: .3s all ease;
+}
+
+.item .item-wrap>.work-info h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.item .item-wrap>.work-info span {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.item .item-wrap:hover {
+  text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+  transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap:hover .work-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonial-wrap {
+  padding: 50px 50px 80px 50px;
+  background: #eceff2;
+}
+
+.testimonial-wrap .testimonial {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testimonial-wrap .testimonial img {
+  border-radius: 50%;
+  width: 120px;
+  margin: 0 auto 30px auto;
+}
+
+.testimonial-wrap .testimonial blockquote p {
+  font-size: 20px;
+}
+
+.h3 {
+  font-size: 20px;
+}
+
+.h4 {
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 28px;
+}
+
+.readmore {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  transition: .2s all ease;
+  font-weight: 700;
+}
+
+.readmore:active,
+.readmore:focus,
+.readmore:hover {
+  outline: none;
+}
+
+.readmore:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+}
+
+.testimonials-slider .swiper-pagination {
+  margin-top: -60px;
+  position: relative;
+}
+
+.testimonials-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(13, 30, 45, 0.3);
+  opacity: 1;
+}
+
+.testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(13, 30, 45, 0.6);
+}
+
+.sticky-content {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+}
+
+.list-line li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.list-line li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .7rem;
+  width: 10px;
+  height: 2px;
+  background: #000;
+}
+
+.form-control {
+  border-radius: 0;
+  background: #f8f9fa;
+  border: 1px solid transparent;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+#projects {
+  color: #fff;
+  text-size-adjust: 30px;
+  text-align: center;
+}
+
+#show {
+  text-align: center;
+  position: relative;
+}
+
+.form-control:active,
+.form-control:focus {
+  background: #eff1f4;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+.custom-progress {
+  height: 7px;
+  border-radius: 0;
+}
+
+.custom-progress .progress-bar {
+  background: #000;
+}
+
+/* Services */
+.services i {
+  font-size: 40px;
+}
+
+.services h4 {
+  padding-top: 10px;
+}
+
+/* Contact Form */
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------------------------------------
+                   Testimonials Section                      
+-------------------------------------------------------- */
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 90.3vh;
+  margin-bottom: 5%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 25% !important;
+  height: 40vh;
+  filter: blur(4px);
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.t-box {
+  position: relative;
+  margin: 20px;
+  top: 10%;
+  left: 1%;
+  padding: 40px;
+  height: 60vh;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.t-image img {
+  position: absolute;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  width: 150px;
+  height: 130px;
+  top: 0;
+  margin-top: 3%;
+  bottom: 0;
+  left: 30%;
+}
+
+.t-text p {
+  color: #fff;
+  text-align: justify;
+  font-size: 22px;
+  margin-top: 80%;
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
+  background-image: none !important;
+}
+
+.quotes {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 34%;
+}
+
+.quotes .fa-quote-right {
   color: #fff;
   font-size: 25px;
 
 }
 
-.name
-{
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 30%;
-    margin-left: 22%;
+.name {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30%;
+  margin-left: 22%;
 }
