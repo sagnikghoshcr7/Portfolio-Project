@@ -61,7 +61,7 @@
 
 
         <!------------------------ Navbar Section ------------------------>
-        <header>
+        <!-- <header>
             <a href="#" class="logo">BigDaddy</a>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -79,9 +79,52 @@
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky", window.scrollY > 0);
             });
+        </script> -->
+
+        <header>
+
+            <nav>
+
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="logo">
+                    LOGO
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#section site-portfolio">Projects</a></li>
+                        <li><a href="#swiper-container">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <script type="text/javascript">
+            // Menu-toggle button
+
+            $(document).ready(function() {
+                $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+                });
+            });
+
+            // Scrolling Effect
+
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+            });
         </script>
-
-
         <!------------------------ Home Section ------------------------>
         <section>
             <div class="home" id="home">
