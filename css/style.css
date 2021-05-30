@@ -24,6 +24,42 @@ body {
 
 
 /* -------------------------------------------------------
+                   Preloader Section
+-------------------------------------------------------- */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: rgb(23, 22, 22);
+    color: #fff;
+}
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(23, 22, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: opacity 0.3s linear;
+}
+
+.page-content {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------------------
                    Navbar Section
 -------------------------------------------------------- */
 
