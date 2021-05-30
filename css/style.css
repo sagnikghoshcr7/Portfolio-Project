@@ -27,12 +27,14 @@ body {
                    Preloader Section
 -------------------------------------------------------- */
 
-
-/* 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+.bg {
+    background-color: #000;
 }
 
 body {
@@ -51,14 +53,30 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    /* z-index: 0; */
     transition: opacity 0.3s linear;
+    animation: preloader 100s;
 }
 
 .page-content {
     max-width: 768px;
     margin: 0 auto;
-} */
+}
+
+@keyframes preloader {
+    0% {
+        display: 1;
+        z-index: 3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -100;
+        display: none;
+    }
+}
 
 
 /* -------------------------------------------------------

@@ -35,7 +35,7 @@
 <body>
 
     <!------------------------ Preloader Section ------------------------>
-    <!-- <div class="preloader">
+    <div class="preloader">
         <section class="bg"></section>
         <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
 
@@ -53,413 +53,412 @@
             } else {
                 clearInterval(fadeEffect);
             }
-        }, 400);
-        ('.loading').remove();
+        }, 1000);
         window.addEventListener('load', fadeEffect);
     </script>
 
-    <div class="main"> -->
+    <div class="main">
 
 
-    <!------------------------ Navbar Section ------------------------>
-    <header>
-        <a href="#" class="logo">BigDaddy</a>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#section site-portfolio">Projects</a></li>
-            <li><a href="#swiper-container">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+        <!------------------------ Navbar Section ------------------------>
+        <header>
+            <a href="#" class="logo">BigDaddy</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#section site-portfolio">Projects</a></li>
+                <li><a href="#swiper-container">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
 
-    <section class="banner"></section>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
 
 
-    <!------------------------ Home Section ------------------------>
-    <section>
-        <div class="home" id="home">
-            <img src="./assets/home/bg.jpg" id="bg">
-            <img src="./assets/home/moon.png" id="moon">
-            <img src="./assets/home/cloud.png" id="cloud">
-            <img src="./assets/home/mountain.png" id="mountain">
-            <img src="./assets/home/personMain.png" id="road1">
-            <img src="./assets/home/person.png" id="road2"></img>
-            <h2 id="text1">Hi, I am</h2>
-            <h2 id="text2">Hi, I am<br>SAGNIK</h2>
-        </div>
-    </section>
-    <script src="./js/home/home.js"></script>
+        <!------------------------ Home Section ------------------------>
+        <section>
+            <div class="home" id="home">
+                <img src="./assets/home/bg.jpg" id="bg">
+                <img src="./assets/home/moon.png" id="moon">
+                <img src="./assets/home/cloud.png" id="cloud">
+                <img src="./assets/home/mountain.png" id="mountain">
+                <img src="./assets/home/personMain.png" id="road1">
+                <img src="./assets/home/person.png" id="road2"></img>
+                <h2 id="text1">Hi, I am</h2>
+                <h2 id="text2">Hi, I am<br>SAGNIK</h2>
+            </div>
+        </section>
+        <script src="./js/home/home.js"></script>
 
-    <!------------------------ About Section ------------------------>
-    <section class="about" id="about">
-        <div class="about-section">
-            <div class="inner-container">
-                <p class="text">I’m Sagnik Ghosh I am a Software developer, and I'm very passionate and dedicated to my work. With two year of experience as a Software developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
-                <div class="tech">
-                    <span>Age: 19</span>
-                    <span>Address: India</span>
-                    <span>Phone No.: +91 69696 96969</span>
+        <!------------------------ About Section ------------------------>
+        <section class="about" id="about">
+            <div class="about-section">
+                <div class="inner-container">
+                    <p class="text">I’m Sagnik Ghosh I am a Software developer, and I'm very passionate and dedicated to my work. With two year of experience as a Software developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+                    <div class="tech">
+                        <span>Age: 19</span>
+                        <span>Address: India</span>
+                        <span>Phone No.: +91 69696 96969</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script src="./js/about/three.min.js"></script>
-        <script src="./js/about/about.js"></script>
-    </section>
-    <script src="./js/skills/skill.js"></script>
+            <script src="./js/about/three.min.js"></script>
+            <script src="./js/about/about.js"></script>
+        </section>
+        <script src="./js/skills/skill.js"></script>
 
-    <!------------------------ Skills Section ------------------------>
-    <section class="skills" id="skills">
+        <!------------------------ Skills Section ------------------------>
+        <section class="skills" id="skills">
 
-        <div class="sets">
-            <script>
-                $(function() {
-                    if ($('section').is('.sets')) {
-                        setInterval(dropImage, 50);
-                    }
-                });
-            </script>
-        </div>
+            <div class="sets">
+                <script>
+                    $(function() {
+                        if ($('section').is('.sets')) {
+                            setInterval(dropImage, 50);
+                        }
+                    });
+                </script>
+            </div>
 
-        <div class="skillsdiv">
-            <table>
-                <tr>
-                    <td>
-                        <div class="skill-bars">
-                            <div class="bar">
-                                <div class="info">
-                                    <span>HTML</span>
+            <div class="skillsdiv">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="skill-bars">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html">
+                                        <span></span>
+                                    </div>
                                 </div>
-                                <div class="progress-line html">
-                                    <span></span>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>jQuery</span>
+                                    </div>
+                                    <div class="progress-line jquery">
+                                        <span></span>
+                                    </div>
                                 </div>
-                                <div class="progress-line css">
-                                    <span></span>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="progress-line python">
+                                        <span></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>jQuery</span>
-                                </div>
-                                <div class="progress-line jquery">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Python</span>
-                                </div>
-                                <div class="progress-line python">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>MySQL</span>
-                                </div>
-                                <div class="progress-line mysql">
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="skill-bars">
-                            <div class="bar">
-                                <div class="info">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="progress-line html">
-                                    <span></span>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="progress-line mysql">
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="skill-bars">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html">
+                                        <span></span>
+                                    </div>
                                 </div>
-                                <div class="progress-line css">
-                                    <span></span>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>jQuery</span>
+                                    </div>
+                                    <div class="progress-line jquery">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="progress-line python">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="progress-line mysql">
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>jQuery</span>
-                                </div>
-                                <div class="progress-line jquery">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>Python</span>
-                                </div>
-                                <div class="progress-line python">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span>MySQL</span>
-                                </div>
-                                <div class="progress-line mysql">
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-    <section style="position: relative;
+        <section style="position: relative;
     width: 100%;
     height: 50vw;">
-    </section>
+        </section>
 
-    <!------------------------ PROJECTS SECTION ----------------------->
-    <section class="section site-portfolio" id="section site-portfolio">
-        <div class="container">
-            <div class="row mb-5 align-items-center">
-                <div class="classs" data-aos="fade-up">
-                    <h2 id="projects">My Projects</h2>
+        <!------------------------ PROJECTS SECTION ----------------------->
+        <section class="section site-portfolio" id="section site-portfolio">
+            <div class="container">
+                <div class="row mb-5 align-items-center">
+                    <div class="classs" data-aos="fade-up">
+                        <h2 id="projects">My Projects</h2>
+                    </div>
+                </div>
+                <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                    <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Boxed Water</h3>
+                                <span>Web</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_1.jpg">
+                        </a>
+                    </div>
+                    <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Build Indoo</h3>
+                                <span>Photography</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_2.jpg">
+                        </a>
+                    </div>
+                    <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Cocooil</h3>
+                                <span>Branding</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_3.jpg">
+                        </a>
+                    </div>
+                    <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Nike Shoe</h3>
+                                <span>Design</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_4.jpg">
+                        </a>
+                    </div>
+                    <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Kitchen Sink</h3>
+                                <span>Photography</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_5.jpg">
+                        </a>
+                    </div>
+                    <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                        <a href="work-single.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3>Amazon</h3>
+                                <span>brandingn</span>
+                            </div>
+                            <img class="img-fluid" src="assets/img/img_6.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="project_page.html" class="item-wrap fancybox">
+                        <button type="button" class="btn btn-lg btn-outline-light" id="show">Show More</button>
+                    </a>
                 </div>
             </div>
-            <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-                <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Boxed Water</h3>
-                            <span>Web</span>
+        </section>
+
+        <!------------------------ TESTIMONIALS SECTION -------------------->
+        <section class="swiper-container" id="swiper-container">
+            <h1 class="title">TESTIMONIALS</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/1.jpeg" alt="Image">
                         </div>
-                        <img class="img-fluid" src="assets/img/img_1.jpg">
-                    </a>
+                        <span class="name">John Smith</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Build Indoo</h3>
-                            <span>Photography</span>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/2.jpeg" alt="Image">
                         </div>
-                        <img class="img-fluid" src="assets/img/img_2.jpg">
-                    </a>
+                        <span class="name">Amelia Black</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Cocooil</h3>
-                            <span>Branding</span>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/3.jpeg" alt="Image">
                         </div>
-                        <img class="img-fluid" src="assets/img/img_3.jpg">
-                    </a>
+                        <span class="name">Jason Magdalino</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Nike Shoe</h3>
-                            <span>Design</span>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/4.jpeg" alt="Image">
                         </div>
-                        <img class="img-fluid" src="assets/img/img_4.jpg">
-                    </a>
+                        <span class="name">Samantha Jersey</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Kitchen Sink</h3>
-                            <span>Photography</span>
+                <div class="swiper-slide">
+                    <div class="t-box">
+                        <div class="t-image">
+                            <img src="assets/testimonials/5.jpeg" alt="Image">
                         </div>
-                        <img class="img-fluid" src="assets/img/img_5.jpg">
-                    </a>
-                </div>
-                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="work-single.html" class="item-wrap fancybox">
-                        <div class="work-info">
-                            <h3>Amazon</h3>
-                            <span>brandingn</span>
+                        <span class="name">Quinton Coldwalker</span>
+                        <div class="quotes"><i class="fas fa-quote-right"></i></div>
+                        <div class="t-text">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
+                            </p>
                         </div>
-                        <img class="img-fluid" src="assets/img/img_6.jpg">
-                    </a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <div class="sp-btn-div">
             <div class="text-center">
-                <a href="project_page.html" class="item-wrap fancybox">
-                    <button type="button" class="btn btn-lg btn-outline-light" id="show">Show More</button>
+                <a href="https://drive.google.com/file/d/1atEgF5Ml96rIyaaYih5NDs7KfI_0dXIN/view?usp=drivesdk" class="item-wrap fancybox">
+                    <button type="button" class="btn btn-lg btn-outline-light" id="show">Download Resume</button>
+                </a>
+                <a href="./phaser-resume/index.html" class="item-wrap fancybox">
+                    <button type="button" class="btn btn-lg btn-outline-light" id="show">See The Journey</button>
                 </a>
             </div>
         </div>
-    </section>
 
-    <!------------------------ TESTIMONIALS SECTION -------------------->
-    <section class="swiper-container" id="swiper-container">
-        <h1 class="title">TESTIMONIALS</h1>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/1.jpeg" alt="Image">
+        <!-------------------------Contact Us Section---------------------->
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <form class="contact-form" action="/action_page.php">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <input id="contact-inp" class="firstname-inp" type="text" placeholder="Your First Name" required /></label>
+                    <input id="contact-inp" class="lastname-inp" type="text" placeholder="Your Last Name" required /></label>
+                    <input id="contact-inp" class="subject-inp" type="text" placeholder="Subject" /></label>
+                    <textarea id="contact-inp" class="msg-inp" name="" id="" cols="80" rows="5" placeholder="Your Message" required></textarea></label>
+                    <input class="contact-btn" type="submit" placeholder="Submit">
+                </form>
+                <div class="other-contact">
+                    <h1 class="OContact-title">Get in Touch!</h1>
+                    <div class="location-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="location-text">112 ABC, New Delhi India</span>
                     </div>
-                    <span class="name">John Smith</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
+                    <div class="email-box">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:satwiksanjay@gmail.com" class="email-text">saatwik@gmail.com</a>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/2.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Amelia Black</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
+                    <div class="phone-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:7044941540" class="phone-text">+91 7044941540</a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/3.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Jason Magdalino</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/4.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Samantha Jersey</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="t-box">
-                    <div class="t-image">
-                        <img src="assets/testimonials/5.jpeg" alt="Image">
-                    </div>
-                    <span class="name">Quinton Coldwalker</span>
-                    <div class="quotes"><i class="fas fa-quote-right"></i></div>
-                    <div class="t-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quam est corporis laborum corrupti beatae explicabo, sit maiores sunt totam illo voluptatem veritatis, magnam et maxime nesciunt perferendis quas officiis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="sp-btn-div">
-        <div class="text-center">
-            <a href="https://drive.google.com/file/d/1atEgF5Ml96rIyaaYih5NDs7KfI_0dXIN/view?usp=drivesdk" class="item-wrap fancybox">
-                <button type="button" class="btn btn-lg btn-outline-light" id="show">Download Resume</button>
-            </a>
-            <a href="./phaser-resume/index.html" class="item-wrap fancybox">
-                <button type="button" class="btn btn-lg btn-outline-light" id="show">See The Journey</button>
-            </a>
-        </div>
-    </div>
-
-    <!-------------------------Contact Us Section---------------------->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <form class="contact-form" action="/action_page.php">
-                <h1 class="contact-title">Contact Me</h1>
-                <input id="contact-inp" class="firstname-inp" type="text" placeholder="Your First Name" required /></label>
-                <input id="contact-inp" class="lastname-inp" type="text" placeholder="Your Last Name" required /></label>
-                <input id="contact-inp" class="subject-inp" type="text" placeholder="Subject" /></label>
-                <textarea id="contact-inp" class="msg-inp" name="" id="" cols="80" rows="5" placeholder="Your Message" required></textarea></label>
-                <input class="contact-btn" type="submit" placeholder="Submit">
-            </form>
-            <div class="other-contact">
-                <h1 class="OContact-title">Get in Touch!</h1>
-                <div class="location-box">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="location-text">112 ABC, New Delhi India</span>
-                </div>
-                <div class="email-box">
-                    <i class="far fa-envelope"></i>
-                    <a href="mailto:satwiksanjay@gmail.com" class="email-text">saatwik@gmail.com</a>
-                </div>
-                <div class="phone-box">
-                    <i class="fas fa-phone-alt"></i>
-                    <a href="tel:7044941540" class="phone-text">+91 7044941540</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!------------------------ Footer Section ------------------------>
+        <!------------------------ Footer Section ------------------------>
 
-    <section class="footer">
-        <div class="wrapper">
-            <div class="iconbutton">
-                <a href="#" class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" style="text-decoration: none"><span>Facebook</span></a>
-                </a>
-            </div>
-            <div class="iconbutton">
-                <a href="#" class="icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" style="text-decoration: none"><span>Twitter</span></a>
-            </div>
-            <div class="iconbutton">
-                <a href="#" class="icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" style="text-decoration: none"><span>Instagram</span></a>
+        <section class="footer">
+            <div class="wrapper">
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Facebook</span></a>
+                    </a>
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Twitter</span></a>
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Instagram</span></a>
 
+                </div>
+                <div class="iconbutton">
+                    <a href="#" class="icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>Whatsapp</span></a>
+                </div>
+                <div class="iconbutton ">
+                    <a href="#" class="icon ">
+                        <i class="fab fa-linkedin "></i>
+                    </a>
+                    <a href="#" style="text-decoration: none"><span>LinkedIn</span></a>
+                </div>
             </div>
-            <div class="iconbutton">
-                <a href="#" class="icon">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#" style="text-decoration: none"><span>Whatsapp</span></a>
-            </div>
-            <div class="iconbutton ">
-                <a href="#" class="icon ">
-                    <i class="fab fa-linkedin "></i>
-                </a>
-                <a href="#" style="text-decoration: none"><span>LinkedIn</span></a>
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
